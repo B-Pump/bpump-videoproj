@@ -1,0 +1,80 @@
+{
+    "workouts": {
+        "curl": {
+            "sugar": {
+                "title": "Curls biceps"
+            },
+            "position": [
+                {
+                    "milieu_x": 100,
+                    "milieu_y": 0
+                },
+                {
+                    "milieu_x": -100,
+                    "milieu_y": 0
+                }
+            ]
+        },
+        "squat": {
+            "sugar": {
+                "title": "Squats"
+            },
+            "position": [
+                {
+                    "milieu_x": 100,
+                    "milieu_y": 0
+                },
+                {
+                    "milieu_x": -100,
+                    "milieu_y": 0
+                }
+            ]
+        },
+        "pushup": {
+            "sugar": {
+                "title": "Pompes"
+            },
+            "position": [
+                {
+                    "milieu_x": 400,
+                    "milieu_y": 150
+                },
+                {
+                    "milieu_x": 400,
+                    "milieu_y": -150
+                },
+                {
+                    "milieu_x": -400,
+                    "milieu_y": 75
+                },
+                {
+                    "milieu_x": -400,
+                    "milieu_y": -75
+                }
+            ]
+        },
+        "burpees": {
+            "sugar": {
+                "title": "Burpees"
+            },
+            "position": [
+                {
+                    "milieu_x": 400,
+                    "milieu_y": 150
+                },
+                {
+                    "milieu_x": 400,
+                    "milieu_y": -150
+                },
+                {
+                    "milieu_x": -400,
+                    "milieu_y": 75
+                },
+                {
+                    "milieu_x": -400,
+                    "milieu_y": -75
+                }
+            ]
+        }
+    }
+}
