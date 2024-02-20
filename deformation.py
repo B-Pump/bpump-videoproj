@@ -3,7 +3,7 @@ import numpy as np
 import keyboard
 
 # Charger l'image
-image = cv2.imread('resized_points.png')
+image = cv2.imread('./assets/resized_points.png')
 
 # Définir les points originaux du trapèze
 points_originaux = np.float32([[0, 0], [1600, 0], [0, 800], [1600, 800]])
