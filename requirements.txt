@@ -1,2 +1,5 @@
 matplotlib
 Pillow
+keyboard
+opencv-python
+numpy

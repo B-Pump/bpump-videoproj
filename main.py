@@ -1,27 +1,20 @@
 from PIL import Image
 import matplotlib.pyplot as plt
 import internal.expectations as data
+import internal.deformation as deform
 
-image = Image.open("assets/blanc.jpg")
+image = Image.open("assets/fond-blanc.jpg")
 
 largeur, hauteur = image.size
 milieu_x = largeur / 2
 milieu_y = hauteur / 2
 marker_size = 100
-nom_fichier = "image_points.png"
+
 class Exercices:
     def __init__(self):
-        """
-        Class initialization
-        """
         pass
 
     def start(self, workout):
-        """
-        Show chart for specified fiscal year
-
-        :param workout: The name of the exercise
-        """
         title = data.fetchSugar(workout)
         positions = data.fetchPosition(workout)
         markers = {
@@ -38,9 +31,7 @@ class Exercices:
             plt.scatter(point[0], point[1], color="red", marker="o", s=marker_size)
 
         plt.scatter(milieu_x, milieu_y, color="blue", marker="x", s=marker_size)
-        plt.axis('off')
-    
-        plt.savefig(nom_fichier, bbox_inches='tight', pad_inches=0)  # Enregistre l'image sans les marges
-        image_points = Image.open("image_points.png")
-        resized_image = image_points.resize((1600, 800))
-        resized_image.save("./assets/resized_points.png")
+        plt.axis("off")
+
+        plt.savefig(f"data/{workout}.png", bbox_inches="tight", pad_inches=0)
+        print(deform.deformImage(workout))
