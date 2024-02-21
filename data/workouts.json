@@ -6,12 +6,12 @@
             },
             "position": [
                 {
-                    "milieu_x": 100,
-                    "milieu_y": 0
+                    "center_x": 100,
+                    "center_y": 0
                 },
                 {
-                    "milieu_x": -100,
-                    "milieu_y": 0
+                    "center_x": -100,
+                    "center_y": 0
                 }
             ]
         },
@@ -21,35 +21,35 @@
             },
             "position": [
                 {
-                    "milieu_x": 100,
-                    "milieu_y": 0
+                    "center_x": 100,
+                    "center_y": 0
                 },
                 {
-                    "milieu_x": -100,
-                    "milieu_y": 0
+                    "center_x": -100,
+                    "center_y": 0
                 }
             ]
         },
         "pushup": {
             "sugar": {
-                "title": "Pompes"
+                "title": "Pushups"
             },
             "position": [
                 {
-                    "milieu_x": 400,
-                    "milieu_y": 150
+                    "center_x": 400,
+                    "center_y": 150
                 },
                 {
-                    "milieu_x": 400,
-                    "milieu_y": -150
+                    "center_x": 400,
+                    "center_y": -150
                 },
                 {
-                    "milieu_x": -400,
-                    "milieu_y": 75
+                    "center_x": -400,
+                    "center_y": 75
                 },
                 {
-                    "milieu_x": -400,
-                    "milieu_y": -75
+                    "center_x": -400,
+                    "center_y": -75
                 }
             ]
         },
@@ -59,20 +59,20 @@
             },
             "position": [
                 {
-                    "milieu_x": 400,
-                    "milieu_y": 150
+                    "center_x": 400,
+                    "center_y": 150
                 },
                 {
-                    "milieu_x": 400,
-                    "milieu_y": -150
+                    "center_x": 400,
+                    "center_y": -150
                 },
                 {
-                    "milieu_x": -400,
-                    "milieu_y": 75
+                    "center_x": -400,
+                    "center_y": 75
                 },
                 {
-                    "milieu_x": -400,
-                    "milieu_y": -75
+                    "center_x": -400,
+                    "center_y": -75
                 }
             ]
         }

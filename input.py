@@ -1,12 +1,14 @@
-from main import Exercices
+from main import Exercises  # Importing the Exercises class from main.py
 
-user_input = input("Quel exercice veux-tu faire ?\n1 - Curl\n2 - Squats\n3 - Pompes\n4 - Burpees\n\nRéponse : ")
+# Asking for user input
+user_input = input("Which exercise do you want to do?\n1 - Curl\n2 - Squats\n3 - Pushups\n4 - Burpees\n\nResponse: ")
 
+# Starting the exercise based on user input
 if user_input == "1":
-    Exercices().start("curl")
+    Exercises().start("curl")
 elif user_input == "2":
-    Exercices().start("squat")
+    Exercises().start("squat")
 elif user_input == "3":
-    Exercices().start("pushup")
+    Exercises().start("pushup")
 elif user_input == "4":
-    Exercices().start("burpees")
+    Exercises().start("burpees")
