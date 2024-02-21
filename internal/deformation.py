@@ -15,7 +15,7 @@ def deformImage(workout):
     
     if image is not None:
         height, width = image.shape[:2]
-
+        print(height, width)
         points_originaux = np.float32([[0, 0], [width, 0], [0, height], [width, height]])
         counter = Counter()
 
@@ -36,9 +36,9 @@ def deformImage(workout):
             points_dest = update_points_dest()
             matrice_transformation = cv2.getPerspectiveTransform(points_originaux, points_dest)
             image_deformee = cv2.warpPerspective(image, matrice_transformation, (width, height))
-            scaled_image = cv2.resize(image_deformee, (800, 400))
-
-            cv2.imshow("Affichage des points", scaled_image)
+            cv2.namedWindow("Affichage des points", cv2.WINDOW_NORMAL)  # Création d'une fenêtre redimensionnable
+            cv2.setWindowProperty("Affichage des points", cv2.WND_PROP_FULLSCREEN, cv2.WINDOW_FULLSCREEN)  # Mettre en plein écran
+            cv2.imshow("Affichage des points", image_deformee)
 
             if cv2.waitKey(1) & 0xFF == ord("q"):
                 break

@@ -3,12 +3,13 @@ import matplotlib.pyplot as plt
 import internal.expectations as data
 import internal.deformation as deform
 
-image = Image.open("assets/fond-blanc.jpg")
+image = Image.open("assets/fond-blanc.png")
 
 largeur, hauteur = image.size
+print ( largeur, hauteur, "test test")
 milieu_x = largeur / 2
 milieu_y = hauteur / 2
-marker_size = 100
+marker_size = 500
 
 class Exercices:
     def __init__(self):
@@ -24,6 +25,8 @@ class Exercices:
             workout: [(milieu_x + x, milieu_y + y) for x, y in positions]
             for workout, positions in markers.items()
         }
+        plt.figure(figsize=(largeur/77, hauteur/77))  # Réglage de la taille de la figure en pouces
+        print(largeur/77 ,hauteur/77)
 
         plt.imshow(image)
 
